@@ -1,0 +1,19 @@
+{
+  "name": "roscoe-shum-brainflix-api",
+  "version": "1.0.0",
+  "description": "brainflix api ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rsce-shm/roscoe-shum-brainflix-api.git"
+  },
+  "author": "Roscoe Shum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsce-shm/roscoe-shum-brainflix-api/issues"
+  },
+  "homepage": "https://github.com/rsce-shm/roscoe-shum-brainflix-api#readme"
+}
