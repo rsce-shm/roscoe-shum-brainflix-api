@@ -70,6 +70,7 @@ router.post("/:videoId/comments", (req, res) => {
 
     const videos = readData();
     const selectedVideo = videos.find((video)=> video.id === req.params.videoId)
+    console.log(selectedVideo)
     const commSection = selectedVideo.comments
     
     commSection.push(newComm)
