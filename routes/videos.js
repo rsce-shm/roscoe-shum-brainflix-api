@@ -11,7 +11,15 @@ function readData(){
 
 router.get('/', (_req,res) => {
     const videos = readData();
-    res.json(videos)
+    const filteredData = videos.map((video) => {
+        return {
+            id: video.id, 
+            title: video.title,
+            channel: video.channel,
+            image: video.image
+        }
+    })
+    res.json(filteredData)
 })
 
 router.get('/:videoId', (req, res)=>{
@@ -76,7 +84,5 @@ router.post("/:videoId/comments", (req, res) => {
 
     res.status(201).json(newComm)
 })
-
-router.delete("/:videoId/comments/:commentId")
 
 module.exports = router;
