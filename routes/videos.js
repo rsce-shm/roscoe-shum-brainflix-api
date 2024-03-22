@@ -11,7 +11,6 @@ function readData(){
 
 router.get('/', (_req,res) => {
     const videos = readData();
-    console.log(videos);
     res.json(videos)
 })
 
@@ -70,7 +69,6 @@ router.post("/:videoId/comments", (req, res) => {
 
     const videos = readData();
     const selectedVideo = videos.find((video)=> video.id === req.params.videoId)
-    console.log(selectedVideo)
     const commSection = selectedVideo.comments
     
     commSection.push(newComm)
@@ -78,5 +76,7 @@ router.post("/:videoId/comments", (req, res) => {
 
     res.status(201).json(newComm)
 })
+
+router.delete("/:videoId/comments/:commentId")
 
 module.exports = router;
