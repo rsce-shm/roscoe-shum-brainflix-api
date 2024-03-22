@@ -31,7 +31,7 @@ router.post('/', (req, res) =>{
         id: uuid(),
         title: req.body.title, 
         description: req.body.description, 
-        channel: 'You',
+        channel: 'BigBananaBoy3',
         timestamp: todayDate,
         image: 'http://localhost:8080/images/Upload-video-preview.jpg',
         views: "980,544",
