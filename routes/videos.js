@@ -74,7 +74,7 @@ router.post("/:videoId/comments", (req, res) => {
     const commSection = selectedVideo.comments
     
     commSection.push(newComm)
-    fs.writeFileSync("./data/videos.json", JSON.stringify(commSection))
+    fs.writeFileSync("./data/videos.json", JSON.stringify(videos))
 
     res.status(201).json(newComm)
 })
